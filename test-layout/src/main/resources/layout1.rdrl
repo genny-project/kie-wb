@@ -9,8 +9,8 @@ rule "layout1"
 	when
 		evt : QEvent( event_type == "EVT_LAYOUT" , code == "layout1" )
 	then
-		QCmd fact0 = new QCmd();
-		fact0.setCmd_type( "CMD_LAYOUT" );
-		fact0.setCode( "layout1" );
-		insert( fact0 );
+		QCmd cmd = new QCmd();
+		cmd.setCmd_type( "CMD_LAYOUT" );
+		cmd.setCode( "layout1" );
+		insert( cmd );
 end
