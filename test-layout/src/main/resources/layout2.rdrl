@@ -7,10 +7,10 @@ rule "layout2"
 	ruleflow-group "LayoutRules"
 	no-loop true
 	when
-		evt : QEvent( event_type == "EVT_LAYOUT" , code == "layout1" )
+		evt : QEvent( event_type == "EVT_LAYOUT" , code == "layout2" )
 	then
 		QCmd cmd = new QCmd();
 		cmd.setCmd_type( "CMD_LAYOUT" );
-		cmd.setCode( "layout1" );
+		cmd.setCode( "layout2" );
 		insert( cmd );
 end
