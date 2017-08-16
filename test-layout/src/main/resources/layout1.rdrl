@@ -4,6 +4,8 @@ import genny.QCmd;
 
 rule "layout1"
 	dialect "mvel"
+	ruleflow-group "LayoutRules"
+	no-loop true
 	when
 		evt : QEvent( event_type == "EVT_LAYOUT" , code == "layout1" )
 	then
