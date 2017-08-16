@@ -13,4 +13,7 @@ rule "layout1"
 		cmd.setCmd_type( "CMD_LAYOUT" );
 		cmd.setCode( "layout1" );
 		insert( cmd );
+		modify( evt ) {
+				setEvent_type( "changed" )
+		}
 end
