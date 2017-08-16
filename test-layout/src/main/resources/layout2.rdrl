@@ -1,0 +1,16 @@
+import java.lang.Number;
+import genny.QEvent;
+import genny.QCmd;
+
+rule "layout2"
+	dialect "mvel"
+	ruleflow-group "LayoutRules"
+	no-loop true
+	when
+		evt : QEvent( event_type == "EVT_LAYOUT" , code == "layout1" )
+	then
+		QCmd cmd = new QCmd();
+		cmd.setCmd_type( "CMD_LAYOUT" );
+		cmd.setCode( "layout1" );
+		insert( cmd );
+end
