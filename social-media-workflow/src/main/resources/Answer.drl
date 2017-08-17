@@ -1,0 +1,80 @@
+package com.sample
+ 
+import life.genny.qwanda.message.QEventMessage;
+import life.genny.qwanda.message.QCmdMessage;
+import io.vertx.rxjava.core.eventbus.EventBus;
+import io.vertx.core.buffer.Buffer;
+import com.google.gson.Gson;
+import life.genny.qwanda.Answer;
+import life.genny.qwanda.message.QDataAnswerMessage;
+import life.genny.qwandautils.KeycloakUtils;
+import life.genny.qwandautils.QwandaUtils;
+import life.genny.qwanda.message.QDataAskMessage;
+import life.genny.qwanda.Ask;
+
+import java.lang.reflect.Type;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonPrimitive;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.FieldNamingPolicy;
+import io.vertx.core.json.JsonObject;
+import java.time.format.DateTimeFormatter;
+import life.genny.qwanda.DateTimeDeserializer;
+
+global java.lang.String REACT_APP_QWANDA_API_URL;
+global java.lang.String REACT_APP_VERTX_URL;
+global java.lang.String KEYCLOAKIP;
+   
+
+
+rule "Answer"
+    when
+        m : QDataAnswerMessage( QDataAnswerMessage.getData_type().equals(Answer.class.getSimpleName()) )
+        bus: EventBus()
+    then
+     	System.out.println("Answer Rule");
+     	String keycloakProto = System.getProperty("KEYCLOAK_PROTO", "http://");
+    	String keycloakPort = System.getProperty("KEYCLOAK_PORT", "8180");
+    	String keycloakIP = System.getProperty("HOSTIP", KEYCLOAKIP);
+        String keycloakUrl = keycloakProto+keycloakIP+":"+keycloakPort;
+ 
+    	// extract answers
+    	Answer[] answers = m.getItems();
+        String tokenString = KeycloakUtils.getToken(keycloakUrl,"wildfly-swarm-keycloak-example", "curl", "056b73c1-7078-411d-80ec-87d41c55c3b4", "user1", "password1");
+	System.out.println("Answer tokenstr="+tokenString);
+
+	GsonBuilder gsonBuilder = new GsonBuilder();
+	gsonBuilder.registerTypeAdapter(LocalDateTime.class, new DateTimeDeserializer());
+
+	Gson gson = gsonBuilder.create();
+      
+
+
+	for (Answer answer : answers) {
+				String attributeCode = answer.getAttributeCode();
+				String sourceCode = answer.getSourceCode();
+				String targetCode = answer.getTargetCode();
+				String value = answer.getValue();
+				Long askId = answer.getAskId();
+				System.out.println("AskId:"+askId+" ,Source:"+sourceCode+",Target:"+targetCode+","+attributeCode+":"+value);
+				String json2 = gson.toJson(answer);
+				//JsonObject jsonObject = Buffer.buffer(json).toJsonObject();
+				System.out.println("JsonAnswer="+json2);
+				QwandaUtils.apiPostEntity(REACT_APP_QWANDA_API_URL+"/qwanda/answers",json2, tokenString);
+				
+	}    		
+  	String json = QwandaUtils.apiGet(REACT_APP_QWANDA_API_URL+"/qwanda/asksmsg", tokenString);
+	System.out.println("***************");
+	System.out.println("Json="+json);	
+	System.out.println("****************");
+						
+        bus.publish("cmds", json);
+
+        
+end
