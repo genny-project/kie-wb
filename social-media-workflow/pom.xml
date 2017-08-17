@@ -14,6 +14,11 @@
       <artifactId>qwanda-utils</artifactId>
       <version>0.1</version>
     </dependency>
+    <dependency>
+      <groupId>life.genny</groupId>
+      <artifactId>qwanda</artifactId>
+      <version>0.5.2</version>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>
