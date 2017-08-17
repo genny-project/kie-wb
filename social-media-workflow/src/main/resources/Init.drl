@@ -35,6 +35,8 @@ import life.genny.qwanda.DateTimeDeserializer;
    
 
 rule "Init"
+    ruleflow-group "rules-service"
+	no-loop true
     when
         m : QEventMessage( QEventMessage.getData().getCode().equals("AUTH_INIT") )
         bus: EventBus()
