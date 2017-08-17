@@ -4,6 +4,8 @@ life.genny.qwanda.rule
 life.genny.qwanda.attribute
 life.genny.qwanda.entity
 life.genny.qwanda.datatype
+io.vertx.ext.reactivestreams
 life.genny.qwandautils
 life.genny.qwanda
 life.genny.qwanda.validation
+io.vertx.ext.reactivestreams.impl
