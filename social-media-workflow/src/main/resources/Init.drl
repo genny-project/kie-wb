@@ -1,4 +1,6 @@
 package com.sample
+
+import genny.Json;
  
 import life.genny.qwanda.message.QEventMessage;
 import life.genny.qwanda.message.QMessage.MessageData;
@@ -65,12 +67,12 @@ rule "Init"
   	    String tokenString = (String)$map.get("token");//KeycloakUtils.getToken(keycloakUrl,realm, keycloakClientId, secret, keycloakUser, keycloakPassword);
 	// (String)$map.get("token"); //
 		System.out.println("tokenstr="+tokenString);
-		String json = QwandaUtils.apiGet(qwandaServiceUrl+"/qwanda/baseentitys/PER_USER1/attributes", tokenString);
+		String json = QwandaUtils.apiGet(qwandaServiceUrl+"/qwanda/baseentitys/PER_USER1", tokenString);
 
 		System.out.println("*******************");
 		System.out.println("Json="+json);	
 		System.out.println("*******************");
-						
+		Json jsonObject = new Json(json);
 		bus.publish("cmds", json);
   
         
