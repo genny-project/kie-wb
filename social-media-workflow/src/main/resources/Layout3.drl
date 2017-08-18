@@ -4,7 +4,7 @@ import life.genny.qwanda.message.QMessage.MessageData;
 import io.vertx.rxjava.core.eventbus.EventBus;
 import com.google.gson.Gson;
 
-
+import genny.Json;
 
 rule "Layout 3"
 	ruleflow-group "LayoutRules"
@@ -19,6 +19,11 @@ rule "Layout 3"
         System.out.println(json);
         bus.publish("cmds", json);        
         System.out.println(m.getData().getCode());
+        
+        
+        // Assigning code to Json data object
+        String code= m.getData().getCode();
+        Json jsonObject = new Json(code);
 end
 
 
