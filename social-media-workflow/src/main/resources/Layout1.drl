@@ -7,6 +7,8 @@ import com.google.gson.Gson;
 
 
 rule "Layout 1"
+	ruleflow-group "LayoutRules"
+	no-loop true
     when
         m : QEventMessage( QEventMessage.getData().getCode().equals("Layout1") )
         bus: EventBus()
