@@ -6,16 +6,19 @@ import com.google.gson.Gson;
 
 
 
-rule "Layout 2"
+rule "Layout 3"
     when
-        m : QEventMessage( QEventMessage.getData().getCode().equals("Layout2") )
+        m : QEventMessage( QEventMessage.getData().getCode().equals("Layout3") )
         bus: EventBus()
     then
-        QCmdMessage cmd = new QCmdMessage("CMD_LAYOUT","Layout2");
+        QCmdMessage cmd = new QCmdMessage("CMD_LAYOUT","Layout3");
          Gson gson = new Gson();
         String json = gson.toJson(cmd);
         System.out.println(json);
-        bus.publish("cmds", json);       
+        bus.publish("cmds", json);        
         System.out.println(m.getData().getCode());
 end
+
+
+
 
