@@ -12,9 +12,7 @@ public class Json implements java.io.Serializable
    @org.kie.api.definition.type.Label(value = "Json Data")
    private java.lang.String data;
 
-   public Json()
-   {
-   }
+
 
    public java.lang.String getData()
    {
