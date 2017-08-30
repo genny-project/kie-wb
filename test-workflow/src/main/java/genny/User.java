@@ -17,6 +17,8 @@ public class User implements java.io.Serializable
    private java.lang.String fname;
    private java.lang.String lname;
 
+   private java.lang.Boolean status;
+
    public User()
    {
    }
@@ -91,10 +93,20 @@ public class User implements java.io.Serializable
       this.lname = lname;
    }
 
+   public java.lang.Boolean getStatus()
+   {
+      return this.status;
+   }
+
+   public void setStatus(java.lang.Boolean status)
+   {
+      this.status = status;
+   }
+
    public User(java.lang.String email, java.lang.String password,
          java.lang.String username, java.lang.String user_type,
          java.lang.String mobile, java.lang.String fname,
-         java.lang.String lname)
+         java.lang.String lname, java.lang.Boolean status)
    {
       this.email = email;
       this.password = password;
@@ -103,6 +115,7 @@ public class User implements java.io.Serializable
       this.mobile = mobile;
       this.fname = fname;
       this.lname = lname;
+      this.status = status;
    }
 
 }
