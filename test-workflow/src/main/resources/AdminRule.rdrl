@@ -1,7 +1,14 @@
 import java.lang.Number;
+import genny.User;
 
 rule "AdminRule"
 	dialect "mvel"
+	ruleflow-group "UserTypeRules"
+	no-loop true
 	when
+		u1 : User( user_type == "admin" )
 	then
+		modify( u1 ) {
+
+		}
 end
