@@ -1,0 +1,100 @@
+
+<form id="1968120250">
+<property name="name" value="test-workflow.user-registration-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="fname" type="InputText" id="1048096202">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;First Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="fname"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="lname" type="InputText" id="656295692">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Last Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="lname"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="status" type="CheckBox" id="1288828397">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (status)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="status"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="user_email" type="InputText" id="1431328847">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="user_fname" type="InputText" id="1755142966">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;fname (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/fname"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="user_lname" type="InputText" id="1554646629">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lname (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/lname"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="user_mobile" type="InputText" id="14663705">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;mobile (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/mobile"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="user_password" type="InputText" id="864360018">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;password (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/password"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="user_status" type="CheckBox" id="1410789653">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/status"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="9" name="user_user_type" type="InputText" id="611207961">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;user_type (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/user_type"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="user_username" type="InputText" id="46909193">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;username (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="user/username"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="email" value="java.lang.String" id="email"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="fname" value="java.lang.String" id="fname"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="lname" value="java.lang.String" id="lname"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="mobile" value="java.lang.String" id="mobile"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="password" value="java.lang.String" id="password"/>
+<dataHolder inputId="" name="#000000" type="basicType" outId="status" value="java.lang.Boolean" id="status"/>
+<dataHolder inputId="" name="#FF8881" type="dataModelerEntry" outId="user" value="genny.User" id="user"/>
+<dataHolder inputId="" name="#A7E690" type="className" outId="user_type" value="java.lang.Object" id="user_type"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="username" value="java.lang.String" id="username"/>
+</form>
