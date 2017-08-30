@@ -9,6 +9,6 @@ rule "AdminRule"
 		u1 : User( user_type == "admin" )
 	then
 		modify( u1 ) {
-
+				setStatus( true )
 		}
 end
