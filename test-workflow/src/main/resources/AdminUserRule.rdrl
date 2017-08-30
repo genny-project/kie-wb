@@ -1,7 +1,0 @@
-import java.lang.Number;
-
-rule "AdminUserRule"
-	dialect "mvel"
-	when
-	then
-end
