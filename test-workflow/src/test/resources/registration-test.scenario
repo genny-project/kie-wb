@@ -19,18 +19,18 @@
       <name>UserTypeRules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>6</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>GeneralRule</ruleName>
-      <explanation>Rule [GeneralRule] was not activated. Expected it to be activated.</explanation>
+      <explanation>Rule [GeneralRule] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-09-01 00:10:30.666 UTC</lastRunResult>
+  <lastRunResult>2017-09-01 00:12:27.916 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
