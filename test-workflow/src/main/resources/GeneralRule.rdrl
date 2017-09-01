@@ -6,9 +6,9 @@ rule "GeneralRule"
 	ruleflow-group "UserTypeRules"
 	no-loop true
 	when
-		u1 : User( user_type == "general" )
+		u1 : User( user_type == "admin" )
 	then
 		modify( u1 ) {
-				setStatus( false )
+				setStatus( true )
 		}
 end
