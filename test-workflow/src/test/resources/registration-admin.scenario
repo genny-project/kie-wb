@@ -1,5 +1,5 @@
 <scenario>
-  <name>registration-test.scenario</name>
+  <name>registration-admin.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>user_type</name>
-          <value>general</value>
+          <value>admin</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -19,18 +19,18 @@
       <name>UserTypeRules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>6</executionTimeResult>
+      <executionTimeResult>3</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
-      <ruleName>GeneralRule</ruleName>
-      <explanation>Rule [GeneralRule] was activated 1 times.</explanation>
+      <ruleName>AdminRule</ruleName>
+      <explanation>Rule [AdminRule] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2017-09-01 00:12:27.916 UTC</lastRunResult>
+  <lastRunResult>2017-09-01 00:13:43.101 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
