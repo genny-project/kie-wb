@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>user_type</name>
-          <value>admin</value>
+          <value>general</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -18,12 +18,19 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>UserTypeRules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>1</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
-      <ruleName>AdminRule</ruleName>
+      <ruleName>GeneralRule</ruleName>
+      <explanation>Rule [GeneralRule] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2017-09-01 00:10:30.666 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
