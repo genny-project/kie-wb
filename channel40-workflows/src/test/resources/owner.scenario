@@ -19,16 +19,9 @@
       <name>usertype</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>7</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>960</executionTimeResult>
+      <numberOfRulesFired>100000</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>   owner</ruleName>
-      <explanation>Rule [   owner] was activated 1 times.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
@@ -44,8 +37,15 @@
       <name>owner</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>owner</ruleName>
+      <explanation>Rule [owner] was activated 50000 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>50000</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2017-09-04 05:51:01.387 UTC</lastRunResult>
+  <lastRunResult>2017-09-04 05:56:03.898 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
