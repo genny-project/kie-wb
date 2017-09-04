@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>genny</groupId>
   <artifactId>channel40-workflows</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>kjar</packaging>
   <name>channel40-workflows</name>
   <description>Basic Workflows for Channel 40</description>
