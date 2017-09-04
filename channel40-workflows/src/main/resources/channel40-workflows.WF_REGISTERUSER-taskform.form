@@ -1,8 +1,0 @@
-
-<form id="1638198377">
-<property name="name" value="channel40-workflows.WF_REGISTERUSER-taskform.form"/>
-<property name="displayMode" value="default"/>
-<property name="status" value="0"/>
-<dataHolder inputId="" name="#E9E371" type="basicType" outId="email" value="java.lang.String" id="email"/>
-<dataHolder inputId="" name="#FF54A7" type="basicType" outId="password" value="java.lang.String" id="password"/>
-</form>
