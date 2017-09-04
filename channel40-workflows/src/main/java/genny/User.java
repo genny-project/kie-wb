@@ -12,6 +12,8 @@ public class User implements java.io.Serializable
    private java.lang.String age;
    private java.lang.String name;
 
+   private java.lang.String status;
+
    public User()
    {
    }
@@ -36,10 +38,21 @@ public class User implements java.io.Serializable
       this.name = name;
    }
 
-   public User(java.lang.String age, java.lang.String name)
+   public java.lang.String getStatus()
+   {
+      return this.status;
+   }
+
+   public void setStatus(java.lang.String status)
+   {
+      this.status = status;
+   }
+
+   public User(java.lang.String age, java.lang.String name, java.lang.String status)
    {
       this.age = age;
       this.name = name;
+      this.status = status;
    }
 
 }
