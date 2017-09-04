@@ -2,6 +2,8 @@ import java.lang.Number;
 import genny.User;
 
 rule "   owner"
+	no-loop true
+	ruleflow-group "usertype"
 	dialect "mvel"
 	when
 		owner : User( age <= "16" )
