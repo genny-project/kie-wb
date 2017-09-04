@@ -1,0 +1,12 @@
+import java.lang.Number;
+import genny.client;
+
+rule "rule-02"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "rules"
+	when
+		c1 : client( name == "anish" )
+	then
+		c1.setAge( "12" );
+end
