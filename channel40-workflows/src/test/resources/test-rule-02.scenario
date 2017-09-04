@@ -1,5 +1,5 @@
 <scenario>
-  <name>test-rule-01.scenario</name>
+  <name>test-rule-02.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>name</name>
-          <value>anish</value>
+          <value>adam</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -22,18 +22,11 @@
       <executionTimeResult>3</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>rule-01</ruleName>
-      <explanation>Rule [rule-01] was activated 1 times.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
-    </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
-          <expected>12</expected>
+          <expected>21</expected>
           <actualResult>12</actualResult>
           <successResult>true</successResult>
           <explanation>[c1] field [age] was [12].</explanation>
@@ -44,6 +37,10 @@
       <name>c1</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>rule-02</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
   <lastRunResult>2017-09-04 01:32:21.491 UTC</lastRunResult>
   <rules/>
