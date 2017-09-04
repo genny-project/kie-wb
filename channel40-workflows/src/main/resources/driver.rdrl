@@ -1,7 +1,14 @@
 import java.lang.Number;
+import genny.User;
 
 rule "driver"
 	dialect "mvel"
+	ruleflow-group "usertype"
+	no-loop true
 	when
+		driver : User( age > "16" )
 	then
+		modify( driver ) {
+				setStatus( "driver" )
+		}
 end
