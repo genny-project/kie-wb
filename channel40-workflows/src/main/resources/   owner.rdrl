@@ -3,12 +3,10 @@ import genny.User;
 
 rule "   owner"
 	dialect "mvel"
-	ruleflow-group "usertype"
-	no-loop true
 	when
-		driver : User( age > "16" )
+		owner : User( age <= "16" )
 	then
-		modify( driver ) {
-				setStatus( "driver" )
+		modify( owner ) {
+				setStatus( "owner" )
 		}
 end
