@@ -1,0 +1,8 @@
+
+<form id="1227334045">
+<property name="name" value="UserDetails-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="out_email" value="java.lang.String" id="email"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="out_password" value="java.lang.String" id="password"/>
+</form>
