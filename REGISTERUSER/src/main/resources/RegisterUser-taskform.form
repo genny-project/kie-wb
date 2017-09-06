@@ -1,0 +1,38 @@
+
+<form id="168593375">
+<property name="name" value="RegisterUser-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="username" type="InputText" id="2099296610">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;username_out (username)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="username_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="email" type="InputText" id="2030354844">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email_out (email)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="email_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="password" type="InputText" id="437017136">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;password_out (password)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="password_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="userType" type="InputText" id="1181210488">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;userType_out (userType)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="userType_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="email_out" value="java.lang.String" id="email"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="password_out" value="java.lang.String" id="password"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="userType_out" value="java.lang.String" id="userType"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="username_out" value="java.lang.String" id="username"/>
+</form>
