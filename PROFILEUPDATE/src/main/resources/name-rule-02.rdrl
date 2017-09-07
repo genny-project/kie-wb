@@ -11,4 +11,5 @@ rule "name-rule-02"
 		modify( p2 ) {
 				setStatus( "engineer" )
 		}
+		System.out.println(p2.getStatus())
 end
