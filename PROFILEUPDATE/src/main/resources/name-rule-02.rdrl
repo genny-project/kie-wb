@@ -1,7 +1,14 @@
 import java.lang.Number;
+import genny.Person;
 
 rule "name-rule-02"
 	dialect "mvel"
+	ruleflow-group "allrule"
+	no-loop true
 	when
+		p2 : Person( name != "byron" )
 	then
+		modify( p2 ) {
+				setStatus( "engineer" )
+		}
 end
