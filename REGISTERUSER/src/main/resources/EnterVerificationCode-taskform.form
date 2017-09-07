@@ -1,0 +1,22 @@
+
+<form id="95777359">
+<property name="name" value="EnterVerificationCode-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="mobile" type="InputText" id="1911455527">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_mobile (mobile)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_mobile"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="code" type="InputTextInteger" id="189676099">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;out_code (code)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="out_code"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="out_code" value="java.lang.Integer" id="code"/>
+<dataHolder inputId="in_mobile" name="#BBBBBB" type="basicType" outId="" value="java.lang.String" id="mobile"/>
+</form>
