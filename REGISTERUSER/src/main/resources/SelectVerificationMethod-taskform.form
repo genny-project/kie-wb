@@ -1,0 +1,26 @@
+
+<form id="639327039">
+<property name="name" value="SelectVerificationMethod-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="verification" type="InputText" id="1905405954">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Select Verification Methodquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="verification_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="verificationMethod" type="InputText" id="1599799009">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;verificationMethod_out (verificationMethod)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="verificationMethod_out"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="verification_out" value="java.lang.String" id="verification"/>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="verificationMethod_out" value="java.lang.String" id="verificationMethod"/>
+</form>
